@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTday3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- bai 1 -->
+    <form
+      class="sign-up"
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div class="head" style="margin-left: 10px">
+        <h1>Try a free sample</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+          perferendis, architecto assumenda repellendus voluptatum cumque
+          pariatur quidem dolore dolorem autem sint. Quod repudiandae error, et
+          atque ipsam quidem! Officiis, quos!
+        </p>
+      </div>
+      <div class="sign-up-left">
+        <label for="name"><b>First name</b></label
+        ><br />
+        <input type="text" name="name" placeholder="John" /><br />
+        <label for="email"><b>Email address</b></label
+        ><br />
+        <input type="email" name="email" placeholder="John@example.com" /><br />
+        <label for="city"><b>City</b></label
+        ><br />
+        <input type="text" name="city" placeholder="London" /><br />
+        <label for="zip"><b>ZIP code</b></label
+        ><br />
+        <input type="text" name="zip" placeholder="EC2Y8DS" /><br />
+      </div>
+      <div class="sign-up-right">
+        <label for="name"><b>Last name</b></label
+        ><br />
+        <input type="text" name="name" placeholder="Smith" /><br />
+        <label for="address"><b>Address</b></label
+        ><br />
+        <input type="text" name="address" placeholder="Silk St" /><br />
+        <label for="state"><b>State</b>(optional)</label><br />
+        <input type="text" name="state" /><br />
+        <label for="name"><b>Country</b></label
+        ><br />
+        <select name="country" id="country">
+          <option value="1">United Kingdom</option>
+          <option value="2">Viet Nam</option>
+          <option value="3">Japan</option></select
+        ><br />
+      </div>
+      <button>SEND ME FREE COFFEE</button>
+    </form>
+    <hr />
+    <!-- bai2 -->
+    <table border="1" cellpadding="10" cellpadding="0" width="30%" height="70%">
+      <tr class="first" align="right">
+        <th colspan="4">9+9</th>
+      </tr>
+      <tr bgcolor="aqua">
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>+</th>
+      </tr>
+      <tr bgcolor="aqua">
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>-</th>
+      </tr>
+      <tr bgcolor="aqua">
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>x</th>
+      </tr>
+      <tr bgcolor="aqua">
+        <th>C</th>
+        <th>0</th>
+        <th>=</th>
+        <th>/</th>
+      </tr>
+    </table>
+    <hr />
+    <!-- bai3 -->
+    <form
+      class="login"
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div class="login-more">
+        <label for="username">Username:</label>
+        <input type="text" name="name" />
+      </div>
+      <div class="login-more">
+        <label for="password">Password:</label>
+        <input type="password" name="password" />
+      </div>
+      <div class="login-more">
+        <label for="city">City of Employment:</label>
+        <input type="text" name="city" />
+      </div>
+      <div class="login-more">
+        <label for="server">Web server:</label>
+        <select name="server" id="server">
+          <option value="server">-Choose a server-</option>
+          <option value="server">garena</option>
+          <option value="server">riot</option>
+          <option value="server">EA</option>
+        </select>
+      </div>
+      <div class="login-more" style="display: flex; margin-top: 15px">
+        <label for="role">Please specify you role:</label>
+        <label><input type="radio" name="role" />Admin</label>
+        <label><input type="radio" name="role" />Engineer</label>
+        <label><input type="radio" name="role" />Manager</label>
+        <label><input type="radio" name="role" />Guest</label>
+      </div>
+      <div class="login-more" style="display: flex; margin-top: 15px">
+        <label for="sign in">Single Sign-on to the following:</label>
+        <label><input type="checkbox" name="sign in" />Mail</label>
+        <label><input type="checkbox" name="sign in" />Payroll</label>
+        <label><input type="checkbox" name="sign in" />Self-service</label>
+      </div>
+      <div
+        style="
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <button>Login</button>
+        <button type="reset">reset</button>
+      </div>
+    </form>
+    <hr />
+    <!-- bai4 -->
+    <form
+      class="contact"
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div style="margin-left: 10px">
+        <h2>Get in touch with us by filling contact form below</h2>
+      </div>
+      <div style="display: flex; margin-left: 10px">
+        <div style="display: grid">
+          <input type="text" placeholder="*Enter your full name" />
+          <input type="text" placeholder="*Enter your full name" />
+        </div>
+        <input type="text" placeholder="*Enter your full name" />
+      </div>
+      <textarea
+        style="margin-top: 20px; margin-left: 10px"
+        cols="60"
+        rows="13"
+        name="message"
+        id="message"
+        placeholder="Your messsage here"
+      ></textarea
+      ><br />
+      <button style="margin-left: 10px; margin-bottom: 10px">
+        Send message
+      </button>
+      <span>*Please fill all require form field, thanks!</span>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+/*bai1 */
+.sign-up{
+    width: 30%;
+    height: 70%;
+    background-color: rgb(157, 156, 156);
+    display: flex;
+    flex-wrap: wrap;
+}
+.sign-up div input{
+    width: 180px;
+    height: 25px;
+}
+.sign-up-left {
+    display: grid;
+    padding-right: 50px;
+    margin-left: 10px
+}
+.sign-up-right {
+    display: grid;
+}
+.sign-up div select{
+    width: 190px;
+    height: 30px;
+}
+.sign-up button{
+    background-color: rgb(15, 161, 15);
+    color: white;
+    height: 40px;
+    width: 100%;
+}
+/* bai2 */
+table{
+    font-size: 50px;
+}
+/* bai3 */
+.login{
+    width: 30%;
+    height: 70%;
+}   
+.login-more{
+    display: flex;
+}
+.login-more select{
+    margin-top: 10px;
+}
+.login label{
+    width: 120px;
+    margin-top: 7px 
+}
+.login input{
+    margin-top: 5px;
+}
+.login button{
+    margin-right: 10px;
+}
+/* bai4 */
+.contact{
+    width: 35%;
+    height: 70%;
+    background-color: rgb(157, 156, 156);
+}
+.contact input{
+    height: 30px;
+    width: 150px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.contact button{
+    background-color: gray;
+    color: white;
+    height: 30px;
+    margin-top: 20px;
+}
