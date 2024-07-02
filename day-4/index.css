@@ -1,0 +1,85 @@
+/* bai1 */
+.subscribe {
+  width: 500px;
+  background-color: rgb(48, 80, 111);
+  display: flex;
+  border-radius: 6px;
+  padding-left: 10px;
+  color: white;
+}
+.email {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.button {
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: rgb(24, 230, 61);
+}
+.subscribe:hover ::placeholder {
+  color: yellow;
+}
+.subscribe:hover .email {
+  background-color: #ddd;
+}
+.subscribe:hover .button {
+  background-color: yellow;
+  color: white;
+}
+/* bai2 */
+.blackquote {
+  width: 650px;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+blockquote {
+  width: 650px;
+  line-height: 24px;
+  padding: 100px;
+  font-size: 14px;
+}
+blockquote::after {
+  content: "*";
+  font-size: 50px;
+  position: absolute;
+  margin-top: 30px;
+  background-color: #cccccc;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+blockquote::before {
+  content: "*";
+  font-size: 50px;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+/* bai3 */
+.img {
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+}
+/* bai4 */
+.conclusion {
+  width: 700px; 
+}
+.conclusion u {
+  color: blue;
+}
+.text {
+  width: 700px;
+  height: 200px;
+  border-radius: 10px;
+  border-style: solid;
+  padding-left: 10px;
+  border-width: 1px;
+}
