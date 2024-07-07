@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.box {
+  width: 1300px;
+  margin: 30px auto;
+  position: relative;
+  font-family: "Asap";
+}
+.img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.content {
+  width: 500px;
+  background: #f0f8fb;
+  color: #3f3424;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 15px 20px;
+  position: absolute;
+  top: 130px;
+  left: 180px;
+  opacity: 80%;
+  z-index: 1;
+}
+.content h2 {
+  font-size: 25px;
+  color: #bf4240;
+  text-decoration: none;
+  padding: 10px;
+}
+.sale {
+  background: #bf4240;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 15px 20px;
+  position: absolute;
+  top: 270px;
+  right: 650px;
+  z-index: 2;
+}
+/* bai2 */
+.head {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 510px;
+  left: 125px;
+  background-color: white;
+  border-radius: 5px;
+}
+.text {
+  position: absolute;
+  top: 540px;
+  left: 460px;
+  color: white;
+}
+.image span {
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav {
+  margin-top: 10px;
+  display: flex;
+  gap: 25px;
+  float: right;
+  margin-right: 50px;
+  font-weight: 600;
+}
+.nav a {
+  color: black;
+}
+.nav a:nth-child(1) {
+  color: red;
+}
+.nav a:nth-child(1)::after {
+  content: "";
+  margin-top: 10px;
+  width: 82px;
+  height: 3px;
+  display: block;
+  background-color: red;
+}
+/* bai3 */
+.city li {
+  background-color: white;
+  text-align: center;
+  padding: 6px 16px;
+  border-radius: 99px;
+  cursor: pointer;
+}
+.city li span {
+  font-style: italic;
+}
+.city li:nth-child(1) {
+  background-color: #af7c38;
+  color: white;
+}
+.list_city .item .img {
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+}
+.list_city .item .img img {
+  border-radius: 5px;
+  width: 435px;
+  height: 100%;
+}
+.list_city .item h3 {
+  font-weight: 500;
+}
+.list_city .item .title {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+}
+.list_city .item p {
+  position: absolute;
+  bottom: 20px;
+  font-weight: 200;
+  left: 14px;
+  font-size: 14px;
+}
+.list_city .item span {
+  font-weight:  400;
+  font-size: 16px;
+}
+.list_city {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.item {
+  position: relative;
+}
