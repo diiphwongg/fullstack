@@ -34,43 +34,47 @@
 /* bai2 */
 .blackquote {
   width: 650px;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin: 50px 50px;
+  position: relative;
+  /* line-height: 24px; */
 }
-blockquote {
-  width: 650px;
-  line-height: 24px;
-  padding: 100px;
-  font-size: 14px;
-}
-blockquote::after {
+.blackquote::before{
   content: "*";
-  font-size: 50px;
+  font-size: 40px;
   position: absolute;
-  margin-top: 30px;
-  background-color: #cccccc;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-}
-blockquote::before {
-  content: "*";
-  font-size: 50px;
-  background-color: #cccccc;
-  border-radius: 50%;
-}
-/* bai3 */
-.img {
-  font-size: 20px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
+  border: 1px solid red;
 
+}
+.blackquote::after{
+  content: "*";
+  font-size: 40px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+
+/* bai3 */
+.list_users li {
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.list_users li::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  width: 20px;
+  height: 13px;
+  background: url(https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/02/y-nghia-cua-cac-icon-4.jpg);
+  background-size: cover;
 }
 /* bai4 */
 .conclusion {
-  width: 700px; 
+  width: 700px;
 }
 .conclusion u {
   color: blue;
@@ -79,7 +83,7 @@ blockquote::before {
   width: 700px;
   height: 200px;
   border-radius: 10px;
-  border-style: solid;
+  border: 1px solid black;
   padding-left: 10px;
-  border-width: 1px;
+  
 }
