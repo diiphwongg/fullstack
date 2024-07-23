@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+.game {
+  width: 100%;
+  height: 100%;
+  background: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg)
+    no-repeat 0;
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+.game-decoration {
+  width: 64%;
+  height: 140%;
+  border-radius: 50%;
+  background: url(https://hoanganf8.github.io/htmlcss_project02/image/dot-texture.png)
+    repeat 0 0 #fff;
+  position: absolute;
+  top: -20%;
+  right: -32%;
+  pointer-events: none;
+}
+.game-content {
+  color: #fff;
+  text-align: center;
+  width: 584px;
+  position: absolute;
+  top: 16%;
+  left: 13%;
+}
+.game-content .logo i {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.game-content h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  position: absolute;
+  left: 225px;
+}
+.game-content h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  position: relative;
+  top: -10px;
+}
+.game-content-text {
+  width: 400px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  margin-left: 95px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.tab-switch {
+  display: flex;
+  justify-content: center;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
+.button-login {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #333;
+  width: 180px;
+  height: 54px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.button-register {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 180px;
+  height: 54px;
+  border: 1px solid #fff;
+  /* color: #fff; */
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.game-form {
+  width: 484px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 13%;
+}
+.form-login .form-box-decoration {
+  position: relative;
+  left: -84px;
+  top: -75px;
+}
+.form-login {
+  transform: translate(0px, 0px);
+  /* visibility: visible; */
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  transition: all 0.6s ease-in-out 0s;
+  display: block;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-login .form-box-title {
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 45px;
+  font-size: 28px;
+  left: 165px;
+}
+.form-login {
+  width: 100%;
+  height: 620px;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+}
+.form {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.form-row {
+  width: 100%;
+  display: flex;
+}
+.form-item {
+  width: 100%;
+}
+.form-input {
+  position: relative;
+}
+.form-input label {
+  color: #adafca;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+.form-input input:not(:placeholder-shown) + .form-input label,
+.form-input input:focus + .form-input label{
+  font-size: 10px;
+  top: 0px;
+  left: 11px;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: white;
+  color: #adafca;
+}
+input[type="password"],
+input[type="text"] {
+  height: 54px;
+  padding: 0 18px;
+}
+input[type="password"],
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #dedeea;
+  color: #3e3f5e;
+  transition: border-color 0.2s ease-in-out;
+}
+button,
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.form-input :hover {
+  border: 1px solid #7b5dfa;
+}
+.checkbox-wrap {
+  position: relative;
+}
+.checkbox-wrap label {
+  padding-left: 34px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.checkbox-wrap .checkbox-box {
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #dedeea;
+  border-radius: 6px;
+  background-color: #fff;
+  pointer-events: none;
+  position: absolute;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.form-row {
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  font-style: normal;
+  color: gray;
+  font-size: 14px;
+}
+.form-row a {
+  color: gray;
+  text-decoration: none;
+  padding-left: 87px;
+}
+.checkbox-wrap input[type="checkbox"],
+.checkbox-wrap input[type="radio"] {
+  display: none;
+}
+.checkbox-wrap input[type="checkbox"]:checked + .checkbox-box,
+.checkbox-wrap input[type="radio"]:checked + .checkbox-box {
+  background-color: #23d2e2;
+  border-color: #23d2e2;
+}
+.checkbox-wrap input[type="checkbox"]:checked + .checkbox-box .icon-cross,
+.checkbox-wrap input[type="radio"]:checked + .checkbox-box .icon-cross {
+  color: #fff;
+  opacity: 1;
+  text-align: center;
+  font-size: 10px;
+}
+.icon-cross {
+  opacity: 0;
+}
+.form-row .form-item button {
+  height: 60px;
+  background-color: #5753e4;
+  color: #fff;
+  border: 1px solid white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form-row .form-item button:hover {
+  color: #fff;
+  background-color: #3e3aa3;
+}
+.form-box .lined-text {
+  margin-top: 40px;
+}
+.lined-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+p {
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 1em;
+}
+.lined-text:after {
+  right: 0;
+}
+.lined-text:before {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: #f5f5fa;
+  position: absolute;
+  top: 5px;
+  left: 55px;
+}
+.lined-text:after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: #f5f5fa;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+}
+.social-links {
+  margin-top: 40px;
+  text-align: center;
+}
+.facebook {
+  background-color: #3763d2;
+  color: white;
+  padding: 11px 11px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+.twitter {
+  background-color: #1abcff;
+  color: white;
+  padding: 11px 11px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+.twitch {
+  background-color: #7b5dfa;
+  color: white;
+  padding: 11px 11px;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+.youtube {
+  background-color: #fd434f;
+  color: white;
+  padding: 11px 11px;
+  border-radius: 10px;
+  margin-right: 0px;
+}
+.form-item a:hover {
+  color: #23d2e2;
+}
+
+.form-register {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translate(0px, 0px);
+  visibility: visible;
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  transition: all 0.6s ease-in-out 0s;
+  display: block;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-register .form-box-title {
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 45px;
+  font-size: 28px;
+  left: 125px;
+}
+.form-register .form-box-decoration {
+  position: relative;
+  left: -84px;
+  top: -30px;
+}
+.form-register .form-row .form-item button {
+  margin-top: 30px;
+  background-color: #23d2e2;
+  cursor: pointer;
+}
+.form-register .form-row .form-item button:hover {
+  background-color: #199da9;
+}
+.form-register .form-text {
+  padding: 0px 50px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #3e3f5e;
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+}
+.button-register:hover{
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #333; 
+}
+.tab-switch a:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* .form-i:not(:placeholder-shown) + .form-label,
+.form-i:focus + .form-label{
+  top: 5px;
+  left: 11px;
+  padding: 0 10px;
+  display: inline-block;
+  background-color: white;
+  color: #7b5dfa;
+} */
+/* .form-i:focus + .form-label {
+  top: 0;
+} */

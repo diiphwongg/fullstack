@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Day11</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="game-decoration"></div>
+      <div class="game-content">
+        <div class="logo">
+          <div class="icon-logo">
+            <i class="fa-brands fa-d-and-d"></i>
+          </div>
+        </div>
+        <h2>WELCOME TO</h2>
+        <h1>VIKINGER</h1>
+        <p style="color: #fff;" class="game-content-text">
+          The next generation social network & community! Connect with your
+          friends and play with our quests and badges gamification system!
+        </p>
+        <div class="tab-switch">
+          <a class="button-login">Login</a>  
+          <a class="button-register">Register</a>
+        </div>
+      </div>
+      <div class="game-form">
+        <div class="form-login">
+          <img
+            class="form-box-decoration"
+            src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+            alt="rocket"
+          />
+          <h2 class="form-box-title">Account Login</h2>
+          <form class="form">
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <label for="login-username">Username or Email</label>
+                  <input
+                    type="text"
+                    id="login-username"
+                    name="login_username" placeholder=" "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <label for="login-password">Password</label>
+                  <input
+                    type="password"
+                    id="login-password"
+                    name="login_password" placeholder=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row space-between" style="margin-bottom: 50px;">
+              <div class="form-item">
+                <div class="checkbox-wrap">
+                  <input
+                    type="checkbox"
+                    id="login-remember"
+                    name="login_remember"
+                    checked
+                  />
+                  <div class="checkbox-box">
+                    <span class="icon-cross"
+                      ><i class="fa-solid fa-x"></i
+                    ></span>
+                  </div>
+                  <label for="login-remember">Remember Me</label>
+                </div>
+              </div>
+              <div class="form-item">
+                <a style="font-weight: bold;" class="form-link" href="#">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <button class="button medium secondary">
+                  Login to your Account!
+                </button>
+              </div>
+            </div>
+          </form>
+          <p class="lined-text">Login with your Social Account</p>
+          <div class="social-links">
+            <a class="facebook" href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="twitter" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="twitch" href="#">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+            <a class="youtube" href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <!-- login -->
+        <div class="form-register">
+          <img
+            class="form-box-decoration"
+            src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+            alt="rocket"
+          />
+          <h2 class="form-box-title">Create your Account!</h2>
+          <form class="form">
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <input
+                    type="text"
+                    id="register-email"
+                    name="register_email" placeholder=" "
+                  />
+                  <label for="register-email">Your Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <label for="register-username">Username</label>
+                  <input
+                    type="text"
+                    id="register-username"
+                    name="register_username" placeholder=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <label for="register-password">Password</label>
+                  <input
+                    type="password"
+                    id="register-password"
+                    name="register_password" placeholder=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <div class="form-input">
+                  <label for="register-password-repeat">Repeat Password</label>
+                  <input
+                    type="password"
+                    id="register-password-repeat"
+                    name="register_password_repeat" placeholder=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <div class="checkbox-wrap">
+                  <input
+                    type="checkbox"
+                    id="register-new"
+                    name="register_new"
+                    checked
+                  />
+                  <div class="checkbox-box">
+                    <span class="icon-cross"
+                      ><i class="fa-solid fa-x"></i
+                    ></span>
+                  </div>
+                  <label for="register-new"
+                    >Send me news and updates via email</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <button class="button medium primary">Register Now!</button>
+              </div>
+            </div>
+          </form>
+          <p class="form-text">
+            You'll receive a confirmation email in your inbox with a link to
+            activate your account. If you have any problems,
+            <a href="#" style="color: #23d2e2;;">contact us</a>!
+          </p>
+        </div>
+        <!-- register -->
+      </div>
+    </div>
+  </body>
+</html>
