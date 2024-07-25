@@ -145,7 +145,6 @@ p {
 }
 .item_effect {
   color: #fff;
-  /* background-color: #A77970; */
   position: absolute;
   top: 0;
   left: 0;
@@ -175,7 +174,7 @@ p {
 }
 .box,
 .item_effect {
-  transition: opacity 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .box:hover .item_effect {
   opacity: 1;
