@@ -23,10 +23,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resposive.css" />
     <title>Day11</title>
   </head>
   <body>
     <div class="game">
+      <input type="radio" id="login" name="landing-form" checked hidden />
+      <input type="radio" id="register" name="landing-form" hidden />
       <div class="game-decoration"></div>
       <div class="game-content">
         <div class="logo">
@@ -36,13 +39,13 @@
         </div>
         <h2>WELCOME TO</h2>
         <h1>VIKINGER</h1>
-        <p style="color: #fff;" class="game-content-text">
+        <p style="color: #fff" class="game-content-text">
           The next generation social network & community! Connect with your
           friends and play with our quests and badges gamification system!
         </p>
         <div class="tab-switch">
-          <a class="button-login">Login</a>  
-          <a class="button-register">Register</a>
+          <label class="button-login" for="login">Login</label>
+          <label class="button-register" for="register">Register</label>
         </div>
       </div>
       <div class="game-form">
@@ -57,28 +60,33 @@
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="login-username">Username or Email</label>
                   <input
                     type="text"
                     id="login-username"
-                    name="login_username" placeholder=" "
+                    name="login_username"
+                    placeholder=" "
                   />
+                  <label class="form-label" for="login-username"
+                    >Username or Email</label
+                  >
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="login-password">Password</label>
                   <input
                     type="password"
                     id="login-password"
-                    name="login_password" placeholder=""
-                  />
+                    name="login_password"
+                    placeholder=""
+                  /><label class="form-label" for="login-password"
+                    >Password</label
+                  >
                 </div>
               </div>
             </div>
-            <div class="form-row space-between" style="margin-bottom: 50px;">
+            <div class="form-row space-between" style="margin-bottom: 50px">
               <div class="form-item">
                 <div class="checkbox-wrap">
                   <input
@@ -96,7 +104,9 @@
                 </div>
               </div>
               <div class="form-item">
-                <a style="font-weight: bold;" class="form-link" href="#">Forgot Password?</a>
+                <a style="font-weight: bold" class="form-link" href="#"
+                  >Forgot Password?</a
+                >
               </div>
             </div>
             <div class="form-row">
@@ -138,45 +148,54 @@
                   <input
                     type="text"
                     id="register-email"
-                    name="register_email" placeholder=" "
+                    name="register_email"
+                    placeholder=" "
                   />
-                  <label for="register-email">Your Email</label>
+                  <label class="form-label" for="register-email"
+                    >Your Email</label
+                  >
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-username">Username</label>
                   <input
                     type="text"
                     id="register-username"
-                    name="register_username" placeholder=""
-                  />
+                    name="register_username"
+                    placeholder=""
+                  /><label class="form-label" for="register-username"
+                    >Username</label
+                  >
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-password">Password</label>
                   <input
                     type="password"
                     id="register-password"
-                    name="register_password" placeholder=""
-                  />
+                    name="register_password"
+                    placeholder=""
+                  /><label class="form-label" for="register-password"
+                    >Password</label
+                  >
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-item">
                 <div class="form-input">
-                  <label for="register-password-repeat">Repeat Password</label>
                   <input
                     type="password"
                     id="register-password-repeat"
-                    name="register_password_repeat" placeholder=""
-                  />
+                    name="register_password_repeat"
+                    placeholder=""
+                  /><label class="form-label" for="register-password"
+                    >Repeat Password</label
+                  >
                 </div>
               </div>
             </div>
@@ -209,7 +228,7 @@
           <p class="form-text">
             You'll receive a confirmation email in your inbox with a link to
             activate your account. If you have any problems,
-            <a href="#" style="color: #23d2e2;;">contact us</a>!
+            <a href="#" style="color: #23d2e2">contact us</a>!
           </p>
         </div>
         <!-- register -->

@@ -61,7 +61,7 @@
   margin-left: 95px;
   font-size: 18px;
   margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 .tab-switch {
   display: flex;
@@ -71,8 +71,8 @@
 }
 .button-login {
   border: 1px solid #fff;
-  background-color: #fff;
-  color: #333;
+  /* background-color: #fff; */
+  /* color: #fff; */
   width: 180px;
   height: 54px;
   border-top-left-radius: 12px;
@@ -135,7 +135,7 @@
   margin-top: 40px;
   background-color: #fff;
   border-radius: 10px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .form {
   width: 100%;
@@ -163,7 +163,7 @@
   pointer-events: none;
 }
 .form-input input:not(:placeholder-shown) + .form-input label,
-.form-input input:focus + .form-input label{
+.form-input input:focus + .form-input label {
   font-size: 10px;
   top: 0px;
   left: 11px;
@@ -339,13 +339,12 @@ p {
 }
 
 .form-register {
-  opacity: 1;
+  /* opacity: 1; */
   width: 100%;
   height: 100%;
   background-color: #fff;
   transform: translate(0px, 0px);
   visibility: visible;
-  z-index: 0;
   position: absolute;
   left: 0px;
   transition: all 0.6s ease-in-out 0s;
@@ -385,14 +384,14 @@ p {
   font-family: "Rajdhani", sans-serif;
   text-align: center;
 }
-.button-register:hover{
+/* .button-register:hover{
   border: 1px solid #fff;
   background-color: #fff;
   color: #333; 
 }
 .tab-switch a:first-child {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
+} */
 /* .form-i:not(:placeholder-shown) + .form-label,
 .form-i:focus + .form-label{
   top: 5px;
@@ -405,3 +404,39 @@ p {
 /* .form-i:focus + .form-label {
   top: 0;
 } */
+.form-input input:focus + .form-label {
+  background-color: #fff;
+  padding: 0 6px;
+  top: -7px;
+  left: 12px;
+  font-size: 13px;
+}
+.form-input input:focus {
+  border-color: #615dfa;
+}
+.game #login:checked ~ .game-content .tab-switch label:first-child {
+  background-color: #fff;
+  color: #000;
+}
+.game #register:checked ~ .game-content .tab-switch label:last-child {
+  background-color: #fff;
+  color: #000;
+}
+.game #login:checked ~ .game-form .form-login {
+  opacity: 1;
+  visibility: visible;
+}
+.game #login:checked ~ .game-form .form-register {
+  opacity: 0;
+  visibility: hidden;
+}
+.game #register:checked ~ .game-form .form-register {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+.game #register:checked ~ .game-form .form-login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(50%, 0px);
+}

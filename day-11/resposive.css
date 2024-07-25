@@ -1,0 +1,85 @@
+@media screen and (max-width: 1400px) {
+  .game-content {
+    left: 6%;
+  }
+  .game-decoration {
+    display: none;
+  }
+  .game-content .game-content-text {
+    margin-top: 10px !important;
+  }
+  .tab-switch {
+    margin-top: 40px !important;
+  }
+  .game-form {
+    right: 80px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .game {
+    position: relative !important;
+    height: 1500px;
+  }
+  .game-content {
+    top: 155px;
+    left: 300px;
+    position: absolute !important;
+  }
+
+  .game-content .game-content-text {
+    display: none;
+  }
+  .game-form {
+    right: 360px;
+    top: -150px;
+    margin-top: 700px;
+    position: absolute !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .game {
+    position: relative !important;
+  }
+  .game-content {
+    left: -30px;
+    top: 155px;
+    position: absolute;
+  }
+  .game-form {
+    position: absolute;
+    left: 270px;
+    top: -150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .game {
+    position: relative !important;
+  }
+  .game-content {
+    left: 100px;
+    top: 100px;
+    position: absolute;
+  }
+  .game-form {
+    position: absolute;
+    left: 160px;
+    top: -200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .game {
+    position: relative !important;
+    width: 685px;
+  }
+  .game-content {
+    left: 50px;
+    top: 100px;
+    position: absolute;
+  }
+  .game-form {
+    position: absolute;
+    left: 100px;
+    top: -200px;
+  }
+}
