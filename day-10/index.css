@@ -93,6 +93,9 @@ body{
   display: block;
   translate: 0; 
 } */
+input[type="checkbox"]:checked + .navbar_list_wrapper{
+  display: block;
+}
 .navbar_list_wrapper {
   width: 100%;
   align-items: center;
