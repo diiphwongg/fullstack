@@ -115,7 +115,7 @@ function veBangCuuChuong() {
         }
         console.log(bang);
     }
-}
+}   
 
 veBangCuuChuong();
 

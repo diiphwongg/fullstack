@@ -24,7 +24,8 @@
 //         }
     
 //         // Set interval to call highlight function every 500 milliseconds
-//         setInterval(highlight, 500);4
+//         setInterval(highlight, 500);
+
 // bài 1
 
 const textEle = document.querySelector(".text");
